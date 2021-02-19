@@ -1,0 +1,27 @@
+input {
+   http_poller {
+      urls => {
+      test1 => "https://qatechtesting.atlassian.net"
+      test2 => {
+   method => get
+        user => "m226203"
+        password => "m226203"
+        url => "https://jiracp.prebanco.com.br:8443/rest/api/2/search?jql=type=TICKET"
+        headers => {
+          Accept => "application/json"
+        }
+      }
+   }
+      request_timeout => 20
+      schedule => { every =>"20s"}  
+      codec => "json"
+   }
+}
+output 
+  {
+     elasticsearch {
+        hosts => ["localhost:9200"]
+        index => "esteira-unificada-tickets"
+  }
+  stdout {codec => rubydebug }
+}
