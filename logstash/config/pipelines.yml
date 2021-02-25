@@ -1,5 +1,9 @@
 # config/pipelines.yml
-- pipeline.id: upstream
-  config.string: input { stdin {} } output { pipeline { send_to => [myVirtualAddress] } }
-- pipeline.id: downstream
-  config.string: input { pipeline { address => myVirtualAddress } }
+# - pipeline.id: pipeline_sample_1
+#   path.config: "/usr/share/logstash/pipeline/pipeline_sample_1.conf"
+
+# - pipeline.id: pipeline_sample_2
+#   path.config: "/usr/share/logstash/pipeline/pipeline_sample_2.conf"
+
+- pipeline.id: pipeline_jira_tickets
+  path.config: "/usr/share/logstash/pipeline/pipeline_jira_tickets.conf"
