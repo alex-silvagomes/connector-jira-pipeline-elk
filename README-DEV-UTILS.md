@@ -20,3 +20,11 @@ https://www.elastic.co/guide/en/beats/devguide/current/beats-contributing.html#s
 
 2. Referencias de estudo
 https://www.elastic.co/pt/blog/how-to-tune-elastic-beats-performance-a-practical-example-with-batch-size-worker-count-and-more
+
+3. Documentacao
+https://www.elastic.co/guide/en/logstash/current/plugins-inputs-http.html
+https://www.elastic.co/guide/en/logstash/current/plugins-inputs-http_poller.html
+
+4. Google Cloud Platform 
+
+* 

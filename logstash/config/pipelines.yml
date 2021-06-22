@@ -1,9 +1,6 @@
 # config/pipelines.yml
-# - pipeline.id: pipeline_sample_1
-#   path.config: "/usr/share/logstash/pipeline/pipeline_sample_1.conf"
+- pipeline.id: pipeline_jira
+  path.config: "/usr/share/logstash/pipeline/pipeline_jira.conf"
 
-# - pipeline.id: pipeline_sample_2
-#   path.config: "/usr/share/logstash/pipeline/pipeline_sample_2.conf"
-
-- pipeline.id: pipeline_jira_tickets
-  path.config: "/usr/share/logstash/pipeline/pipeline_jira_tickets.conf"
+- pipeline.id: pipeline_sample_1
+  path.config: "/usr/share/logstash/pipeline/pipeline_sample_1.conf"
